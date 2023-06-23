@@ -21,4 +21,5 @@ function showBattlefield() {
   const fireRun = fire();
   return fireRun;
 }
-console.table(showBattlefield());
+
+console.log(showBattlefield());
