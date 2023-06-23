@@ -1,7 +1,24 @@
+const generate = require('./generate');
+const readlineSync = require('readline-sync');
+const name = readlineSync.question('Напишите свое имя? ');
+console.log(`Игрок - ${name}`);
+
 function fire() {
-  // здесь код, который меняет игровое поле после выстрела
+  const newArr = [...generate];
+  const arrMap = newArr.map((el) =>
+    el.map((elem) => {
+      let findEl = '💧';
+      if (elem === 1) {
+        findEl = '❌';
+      }
+      return findEl;
+    })
+  );
+  return arrMap.join('\n').replace(/,/g, '');
 }
 
 function showBattlefield() {
-  // здесь код, который показывает игровое поле в консоли
+  const fireRun = fire();
+  return fireRun;
 }
+console.table(showBattlefield());
