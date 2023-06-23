@@ -29,8 +29,5 @@ function endGame() {
   const text = `Thx for game - ${name}`;
   return text;
 }
-
-
-
 console.table(showBattlefield());
 console.log(endGame());
