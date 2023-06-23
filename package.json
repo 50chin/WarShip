@@ -8,7 +8,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "play-sound": "^1.1.5",
+    "readline-sync": "^1.4.10"
+  },
   "devDependencies": {
     "eslint": "^8.36.0",
     "eslint-config-airbnb-base": "^15.0.0",
