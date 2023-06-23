@@ -14,7 +14,6 @@ function fire() {
         sound.play("./sound/vyistrel-pistoleta-36125.wav");
         findEl = "❌";
       }
-
       return findEl;
     })
   );
@@ -25,4 +24,13 @@ function showBattlefield() {
   const fireRun = fire();
   return fireRun;
 }
+
+function endGame() {
+  const text = `Thx for game - ${name}`;
+  return text;
+}
+
+
+
 console.table(showBattlefield());
+console.log(endGame());
