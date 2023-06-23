@@ -5,3 +5,4 @@ function fire() {
 function showBattlefield() {
   // здесь код, который показывает игровое поле в консоли
 }
+
